@@ -12,3 +12,26 @@ recent commit. If there are more changes than I mean to make in the particular b
 other change I want to make, then I can edit the files or remove a file from the staging area 
 before proceeding with the commit.
 
+A little over halfway through the second lesson I'm prompted to think about:
+How do the diagrams help you visualize the branch structure?
+It makes branching points more obvious than simply referring to a commit number. But, if I'm honest,
+they don't feel all that necessary.
+
+The bigger thing I'm trying to remember, and to learn to the point that I can describe it well, is
+the GitHub concept of "Reachability". A commit is "Reachable" from your current work if there is some common
+commit in the existing history that can be reached both by your current directory/staging and by the commit
+you want to reach, usually on another branch. If two commits share no common commit then they are considered
+"unreachable"
+
+I am more intrigued at this point about: How can you delete a branch you don't need/want anymore? For example,
+if you create a branch that is purely unreachable from all other desired current commits, you might decide to
+manually go through the changes in the files from all your unreachable commits, then manually try to add them
+to the most recent branch, then commit them. If everything works in the new master commit, you would likely want
+to delete the unreachable branch. How do you do this?
+
+Also: Reachability clearly seems like a term we're taught as a precursor to performing an actual merge. It makes
+sens ethat in orger to act on a merge there must be some shared, past common commit and you go through a process
+of making sure the changes from all subsequent commits don't conflict with each other. This makes "Reachability",
+or the ability to call out a common commit number as a starting point for the merge, as a likely pre-requisite
+for any merging.
+
