@@ -5,3 +5,10 @@ area" (through git add <filename>) which is where all the files being tracked fo
 commit are supposed to be logged prior to actually making a commit.
 
 
+A little over a quarter way through the lesson I'm given the following prompts for reflection:
+How can you use the staging area to make sure you have one commit per logical change?
+By using "git diff --staged" to show all the differences between the staging area and the most
+recent commit. If there are more changes than I mean to make in the particular bug / feature / 
+other change I want to make, then I can edit the files or remove a file from the staging area 
+before proceeding with the commit.
+
