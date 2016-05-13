@@ -1,0 +1,7 @@
+I am supposed to create a new file to track my lessons for Udacity's second GitHub lesson,
+which is walking me through initializing a new GitHub repository (git init), checking the status
+of the github repository I'm currently working in (git status) and adding a file to the "staging
+area" (through git add <filename>) which is where all the files being tracked for the upcoming
+commit are supposed to be logged prior to actually making a commit.
+
+
