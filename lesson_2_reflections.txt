@@ -35,3 +35,15 @@ of making sure the changes from all subsequent commits don't conflict with each 
 or the ability to call out a common commit number as a starting point for the merge, as a likely pre-requisite
 for any merging.
 
+
+Reflect: Merging Two Branches (Friday 5/13 at Noon)
+Well, I did merge the coin and master branch - but the resulting merged game.js file does not work. I went through some effort to try and fix it, but I appear to be pretty screwed.
+
+I had the right idea for how to change the color of the coin giving the existing color definitions and object definitions for coins, ships, etc. But, correctly changing the color code on a game file that doesn't work is pretty pointless.
+
+Update (Friday 5/13 at 3:40)
+I was able to troubleshoot the error in my merged code by opening the inspector in chrome with the broken game.js file loaded. It 
+pointed me to the lines of code which contained unexpected symbols. For some reason, lines 452, 475, and something else had added
+weird lines like >>>>>HEAD which were throwing errors. I commented them out, updated the repo, updated the color code on the coin,
+committed again, and now everything works as desired. Yay for progress!
+
