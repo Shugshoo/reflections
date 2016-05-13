@@ -1,0 +1,83 @@
+Udacity "How to Use Git and GitHub" Lesson 1 Reflections:
+
+So far there's not a ton to reflect on. We walked through an HTML style sheet example,
+and a .js javascript game example in which we had an old file and a new file, and we were able
+to comb through the lines which were changed between the two different file versions to fairly
+quickly find a bug/typo in each change.
+
+Clearly we're being setup for the fact that this "diff combing", and reverting to the last
+functional / successful build and working through all subsequent changes is the best way to debug.
+Therefore, debugging or at least understanding what changed between versions of your code is
+one of the major reasons to use GitHub, and probably most of its views and features are based around this.
+
+In addition to my own thoughts above, the course provided the following prompts for reflection here:
+
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+It limited the number of lines I had to read looking for potential errors
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+Go to the last successful build of a thing
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+It's essentially a signal/noise problem. Manually choosing means you probably have more manual control over when you believe major changes were made, so its easier to save versions only when a large number of changes have built up and you consider yourself to be at a major versioning point. It's probably easier to go through the number of files / versions saved this way.
+
+On the other hand, it's easy to miss a versioning point around key / really hard errors that were committed, so when there is a problem you'll likely have to immediately jump into debugging a much larger number of lines than you would if you had every small set of changes saved off in a version or commit.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+I don't have a real thought here. I think I'm not picking up on the Google Docs distinction as well as I could.
+
+How can you use the commands git log and git diff to view the history of files?
+
+We absolutely have not covered any git specific commands yet, so go fuck yourself for asking this.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+Because I have a reliable system for minimizing the surface area of code I may have to review to fix something.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+Would love to try it for working on a highline / typescript application which works in the roadrunner universe, but if I could just understand what git cloning is/means/does first then that would at least help me regularly and correctly clone Kea project starter files successfully.
+
+Lesson_1.2_reflections: "Where do versions come from?"
+	There wasn't a lot to learn here. We learned that dropbox automatically versions stuff,
+but otherwise versions aren't generated for free / from heaven.
+
+Woo Hoo.
+
+Lesson_1.3_reflections: Properties of a VCS, Manual Commits, Concept Map, Viewing History
+	We went through some stuff to show that continuing to do this manually would be tedious,
+	and explaining the concept of a system that tracks these versions over time. The major 
+	question we were forced to confront is how frequently and on what terms we might actually
+	want to save versioned files, which ends up being the basis for a "commit" and why it 
+	exists in the first place:
+		A commit should be made every time you complete all work on a logical grouping of things,
+		most especially many lines of code all added or changed to make a particular feature work.
+
+Lesson_1.4_reflections: Manual commits
+	I really think this was a silly place to reflect. We just walked through examples of how Dropbox, Google, and other things have different commit levels. Also, I didn't take notes right away so I'm probably just conflating some stuff.
+
+Lesson_1.4_reflections:Multi-File-Commits
+	We're exposed to the idea that certain files (like index.html and index.css) will be highly linked, and therefore make sense to version them together, as a large unit. We're exposed to the idea that multiple files being versioned together make up a repository.
+
+	There seems to be some complexity around when you make changes that effect only some of the documents being versioned together. Default behavior seems to be that all documents are "changed", or at leasthave a version of themselves made with a new date/time stamp even if no changes were made within a given document. But, you use "diff" or "git log" commands to track the diffs, which of course only pertain to a subset of docs
+
+Lesson_1.6_reflections: Using Git to View History
+	Interview with Jeffrey Middleton, an engineer on Google Search page ranking. You know, a big deal. Fast talker. Talks about small things not wanting to be version controlled, but basically everything else needing to be.
+
+Lesson_1.7_reflections: Confidence from Version Control
+	Prompt: How might using version control make you more confident to make changes that could break something?
+	Like I said before, knowing that it's trivial to restore from a recent working version, then being able to view only those changes makes it reasonable that a change A) won't irrevicably break working code through subtle, small changes; and B) it significantly decreases the time investment that will be needed to guarantee (A)
+
+	For my own thought and reference here, we also learned about and worked through "git checkout <commit#>" and how that command pretty seamlessly changes the files in your github repo, so you can quickly run them and check for buggy behavior. Cool.
+
+	
