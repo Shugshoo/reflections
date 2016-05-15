@@ -47,3 +47,28 @@ pointed me to the lines of code which contained unexpected symbols. For some rea
 weird lines like >>>>>HEAD which were throwing errors. I commented them out, updated the repo, updated the color code on the coin,
 committed again, and now everything works as desired. Yay for progress!
 
+
+
+Reflections "Automatic vs. Manual Merging"
+So, it turns out the difficulty I was having above with those random lines of code was explicitly caused by the manual merge
+process. When Git detects a real conflict with the same file modified by both branches, AND conflicting changes in given lines of
+code, it "helpfully" inserts some code that's easy to find. The syntax looks like this:
+
+
+<<<<<<<<<<<<HEAD  (This starts the section of contested code)
+
+The code as the conflict looked in whichever branch you're currently working in.
+
+|||||| merged common ancestors
+
+The code as it existed in the shared common commit both branches share in their history
+
+========== <name of second branch being merged>
+
+The code as it existed in the branch being merged INTO the branch you're currently working in
+
+
+The lines of code are presented in this way because it's supposed to help you debug the differences. But, you also do have to know
+that those filler lines and their symbols need to be deleted before making the final commit, or else the resulting code won't work
+as it's supposed to. This was definitely a case of learning by doing.
+
