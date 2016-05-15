@@ -1,0 +1,9 @@
+Udacity GitHub Reflections for Lesson 3 "Using GitHub to collaborate"
+Well, the first thing to note in this lesson is that they want me to push my reflections notes
+from these lessons up to a public GitHub repository. So, joke's on me for A) my pretty informal
+note taking style here; and B) the fact that I've been keeping most of my useful notes (like 
+commands learned, and the personal notes on what to remember when setting up my own repo) are 
+all kept in Evernote, since that's where I keep most of my useful life-organizing material.
+
+For the remainder of this note I will follow the actual Udacity provided prompts:
+
