@@ -17,3 +17,18 @@ Why might you want to always pull changes manually rather than having Git automa
 Because another contributor to the same project could easily push changes which are
 incompatable with a change I am currently working on with my local machine. Or, they may
 simply push things which cause errors on their own, or otherwise slow down my velocity.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+Clones: When a repository is already available on the GitHub website, referencing the correct url with the command "git clone <url>"
+will pull a full copy of all the files associated with that repository into your current local working directory. Changes can then
+be worked locally with many commits and/or branches on the main repo that was cloned until such time as you chose to push your changes
+or merge them with the ongoing main branch.
+Branches: For any given repository there is typically a main "master" branch to which all major changes to the current working app or
+project are pushed. Using the command "git branch <branchname>" you can create a new branch which will have a starting point of the
+most up-to-date commit made in the branch you're working in. Changes can then be tracked separate from the main branch for purposes like
+creating a new, experimental feature or creating an easier mode of a game.
+Forks: Forks take an existing repository already available on the GitHub website, and creates a full copy of all the files in the online
+repository *WITHIN YOUR GITHUB ACCOUNT.* The key distinctions from a clone are: 1) the copied files are kept in the GitHub online (cloud)
+storage system, not on your local computer; and 2) the new repo is linked back to the original, making it easier to suggest changes to 
+the original parent project, and giving appropriate attribution to whoever wrote the original code you started working from.
+
