@@ -44,3 +44,9 @@ likelihood of conflicting changes in need of resolution.
 In case #2 it would be easy enough to have changes nearly instantly committed to the same file, but since there are no explicit,
 manual commit points it would be harder to detect conflicts. It would be very easy to silently change something in the code which
 breaks another important part, but without the commit history to diff against, or to load for manual bug testing.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+A separate branch definitely makes more sense if you're looking to keep a separate, working version of something with small versions
+to the core mode - for example, creating an "easy mode" for a game, with only a few parameters like number of enemies generated
+different in the easy version. It may also be useful if you plan to be working on an isolated set of features in parallel with another
+developer working different features for an extended period of time.
