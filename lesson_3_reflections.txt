@@ -6,4 +6,9 @@ commands learned, and the personal notes on what to remember when setting up my 
 all kept in Evernote, since that's where I keep most of my useful life-organizing material.
 
 For the remainder of this note I will follow the actual Udacity provided prompts:
+When would you want to use a remote repository rather than keeping all your work local?
+When you are working on a large project with multiple other contributers who need to push to a single, unified branch. Or, when
+you are working on a branch from many different machines and locations and you want a non-local repository to act as your single
+source of truth for what constitutes a current, working program. Or, when you've reached a releasable milestone and want to make
+the code available to a wide audience for consumption, forking, etc.
 
