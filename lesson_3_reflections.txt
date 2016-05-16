@@ -32,3 +32,6 @@ repository *WITHIN YOUR GITHUB ACCOUNT.* The key distinctions from a clone are: 
 storage system, not on your local computer; and 2) the new repo is linked back to the original, making it easier to suggest changes to 
 the original parent project, and giving appropriate attribution to whoever wrote the original code you started working from.
 
+What is the benefit of having a copy of the last known state of the remote stored locally?
+Any time you run "git status" (which should theoretically be frequent as you verify the clean, committed status of your work) you get
+an up-front reminder of HOW FAR out of sync your work has become with the online "origin/master" copy of your work.
