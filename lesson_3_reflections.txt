@@ -35,3 +35,12 @@ the original parent project, and giving appropriate attribution to whoever wrote
 What is the benefit of having a copy of the last known state of the remote stored locally?
 Any time you run "git status" (which should theoretically be frequent as you verify the clean, committed status of your work) you get
 an up-front reminder of HOW FAR out of sync your work has become with the online "origin/master" copy of your work.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+You would presumably be either 1) passing files via email/usb/external meda, or 2) writing files to a cloud service like dropbox, google
+drive, or the like.
+In case #1, collaboration would have a much higher transaction cost, leading to longer intervals between checkins and a greater
+likelihood of conflicting changes in need of resolution.
+In case #2 it would be easy enough to have changes nearly instantly committed to the same file, but since there are no explicit,
+manual commit points it would be harder to detect conflicts. It would be very easy to silently change something in the code which
+breaks another important part, but without the commit history to diff against, or to load for manual bug testing.
